@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FirebaseChatApp</string>
     <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="get_username">Firebase Chat</string>
+    <string name="onlineusers">Online users</string>
+    <string name="chatpage">Chat</string>
 </resources>

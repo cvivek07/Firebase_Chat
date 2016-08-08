@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="google.firebase.firebasechatapp" >
+    package="google.firebase.firebasechatapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -9,32 +9,27 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity" >
+        android:theme="@style/AppTheme">
+
+
+        <!-- Defining Services -->
+
+
+
+        <activity android:name=".GetUsername"
+            android:label="@string/get_username">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecyclerViewActivity" >
-        </activity>
-        <!--
-           Defining Services
-       -->
-        <service
-            android:name=".MyFirebaseMessagingService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-            </intent-filter>
-        </service>
+        <activity android:name=".OnlineUsers"
+            android:label="@string/onlineusers"/>
+        <activity android:name=".ChatPage"
+            android:label="@string/chatpage">
 
-        <service
-            android:name=".MyFirebaseInstanceIDService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-            </intent-filter>
-        </service>
+        </activity>
     </application>
 
 </manifest>

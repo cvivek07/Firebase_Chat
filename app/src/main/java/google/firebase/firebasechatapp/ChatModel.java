@@ -3,7 +3,7 @@ package google.firebase.firebasechatapp;
 /**
  * Created by Vivek on 26-Jul-16.
  */
-public class Message {
+public class ChatModel {
     private String message;
     private String Sender;
     public String getSender() {
@@ -25,10 +25,10 @@ public class Message {
 
 
 
-    public Message(){
+    public ChatModel(){
 
     }
-    public Message(String s, String m){
+    public ChatModel(String s, String m){
         this.Sender =s ;
         this.message =m;
     }
